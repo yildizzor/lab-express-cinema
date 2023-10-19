@@ -1,0 +1,33 @@
+<div class="one-movie">
+  <div>
+    <img
+      class="card-image-left"
+      src="{{film.image}}"
+      alt
+      Image
+      of
+      {{film.title}}
+    />
+  </div>
+
+  <div class="card-body">
+    <a href="/movies" id="go-back">Go Back</a><br /><br />
+
+    <h2 class="card-title"> {{film.title}}</h2>
+    <h3 class="card-sub-title">Director: {{film.director}}</h3>
+
+    <p id="stars">Stars:</p>
+    {{#each film.stars}}
+      <ul>
+        <li>
+          {{this}}
+        </li>
+      </ul>
+    {{/each}}
+
+    <p>{{film.description}}</p>
+
+    <p> {{#each film.showtimes}} {{this}} | {{/each}}</p>
+
+  </div>
+</div>

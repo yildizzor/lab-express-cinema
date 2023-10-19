@@ -1,0 +1,27 @@
+<div class="movies-header">
+  <h1>Ironhack Cinema</h1>
+
+  <h3>Click on the movie to check the showtimes</h3>
+
+  <form action="/home" method="GET">
+
+    <button class="button"> Go to Home Page!</button>
+  </form>
+
+</div>
+
+<div class="cards">
+  {{#each filmsList}}
+    <div class="card">
+      <img src="{{this.image}}" alt Image of {{this.title}} />
+      <div class="card-name">
+        <h4>{{this.title}}</h4>
+
+        <a href="/movies/{{this.id}}" id="see-more">See more</a>
+
+      </div>
+
+    </div>
+
+  {{/each}}
+</div>

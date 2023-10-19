@@ -1,8 +1,82 @@
 body {
-  padding: 50px;
+  padding: 0;
+  margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
 }
+
+.main-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url("/images/cinema.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+.button {
+  background-color: rgb(242, 239, 239);
+  border: none;
+  color: #59b3d6;
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 13px;
+  margin-right: 100px;
+  text-decoration: none;
+}
+
+#text {
+  color: white;
+  font-size: 120px;
+  font-weight: bold;
+  margin-right: 100px;
+}
+
+.one-movie {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 30px;
+  padding-top: 80px;
+  padding-left: 80px;
+}
+
+.card-body {
+  width: 800px;
+}
+
+.movies-header {
+  padding-left: 150px;
+  margin-top: 10px;
+}
+.cards {
+  display: flex;
+  justify-content: space-around;
+  row-gap: 80px;
+  column-gap: 140px;
+  flex-wrap: wrap;
+  padding: 10px 300px 100px 300px;
+}
+
+.card-name {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(12, 11, 11);
+  row-gap: 7px;
+  padding-bottom: 15px;
+}
+
+#stars {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+

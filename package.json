@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js --watch public --watch views --ext js,mjs,cjs,json,hbs,html,css app.js"
   },
   "dependencies": {
+   
     "cookie-parser": "^1.4.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
